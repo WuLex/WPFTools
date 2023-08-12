@@ -1,0 +1,38 @@
+﻿<Window x:Class="CodeRefactoringTool.MainToolWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Code Refactor Tool" Height="450" Width="800"
+        TextElement.FontSize="20"
+        TextElement.FontWeight="Bold"
+        TextOptions.TextFormattingMode="Display"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Grid Grid.Row="0" Background="{DynamicResource MaterialDesignPaper}" Margin="0,0,10,320" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<Button Content="Open File" Margin="16,8" Style="{DynamicResource MaterialDesignFlatButton}" Click="OpenFile_Click"/>
+            <Button Content="Save File" Margin="16,8" Style="{DynamicResource MaterialDesignFlatButton}" Click="SaveFile_Click"/>-->
+            <Button Content="Format Code" Margin="347,104,-576,-66" Style="{DynamicResource MaterialDesignFlatButton}" Click="FormatCodeButton_Click" Grid.Column="4"/>
+            <Button Content="Encapsulate Field" Margin="70,136,-299,-120" Style="{DynamicResource MaterialDesignFlatButton}" Click="EncapsulateFieldButton_Click" Grid.Column="4"/>
+            <Button Content="Extract Method" Margin="32,136,0,-120" Style="{DynamicResource MaterialDesignFlatButton}" Click="ExtractMethodButton_Click" Grid.ColumnSpan="5"/>
+            <Button Content="Extract Interface" Margin="86,115,-318,-77" Style="{DynamicResource MaterialDesignFlatButton}" Click="ExtractInterfaceButton_Click" Grid.Column="4"/>
+            <Button Content="Extract Class from Parameter" Margin="399,141,-576,-103" Style="{DynamicResource MaterialDesignFlatButton}" Click="ExtractClassFromParameterButton_Click" Grid.Column="4"/>
+        </Grid>
+
+        <!-- Editor -->
+        <TextBox Grid.Row="1" x:Name="EditorTextBox" FontFamily="Consolas" FontSize="16" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Margin="0,217,0,0"  Height="Auto"/>
+    </Grid>
+</Window>
