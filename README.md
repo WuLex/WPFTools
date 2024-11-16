@@ -13,3 +13,6 @@
 ### AutomationTool:
 ![image](https://raw.githubusercontent.com/WuLex/UsefulPicture/main/wpftools/automationtool.png)
 
+### SimulationTool:
+![image](https://raw.githubusercontent.com/WuLex/UsefulPicture/refs/heads/main/wpftools/meanreversion.png)
+
