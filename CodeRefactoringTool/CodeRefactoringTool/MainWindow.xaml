@@ -16,7 +16,7 @@
         </Menu>
         <StackPanel>
             <TextBox x:Name="CodeTextBox" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"/>
-            <Button x:Name="RefactorButton" Content="Refactor" Click="Refactor_Click"/>
+            <Button x:Name="RefactorButton" Content="Refactor" Click="Refactor_Click" Cursor="Hand"/>
         </StackPanel>
     </DockPanel>
 </Window>
